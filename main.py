@@ -31,6 +31,8 @@ class MineSweeperGrid(GridLayout):
         for row in range(self.rows):
             for col in range(self.cols):
                 self.add_widget(self.btn[row][col])
+
+        
 class MineSweeperApp(App):
     def build(self):
         return MineSweeperGrid()
